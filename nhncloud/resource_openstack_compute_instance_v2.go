@@ -1385,7 +1385,7 @@ func resourceInstanceBlockDevicesV2(d *schema.ResourceData, bds []interface{}) (
 
 			nhnEncryption := bootfromvolume.NhnEncryption{
 				SkmAppkey: ne["skm_appkey"].(string),
-				SkmKeyId:  ne["skm_key_id"].(string),
+				SkmKeyID:  ne["skm_key_id"].(string),
 			}
 
 			blockDeviceOpts[i].NhnEncryption = &nhnEncryption
